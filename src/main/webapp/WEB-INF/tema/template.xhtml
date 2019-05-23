@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Projeto Base - 3º Período</title>
+
+	<link rel="stylesheet"
+		href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		crossorigin="anonymous"></link>
+	<h:outputStylesheet name="sb-admin.css" library="css" />
+	<h:outputStylesheet name="bootstrap/css/bootstrap.min.css"
+		library="vendor" />
+
+</h:head>
+<h:body id="page-top">
+
+	<ui:include src="topbar.xhtml" />
+
+	<div id="wrapper">
+		<ui:include src="sidebar.xhtml" />
+		<div id="content-wrapper">
+			<ui:insert name="content" />
+			<ui:include src="footer.xhtml" />
+		</div>
+	</div>
+
+	<h:outputScript name="jquery/jquery.min.js" library="vendor" />
+	<h:outputScript name="jquery.easing/jquery.easing.js" library="vendor" />
+	<h:outputScript name="bootstrap/js/bootstrap.min.js" library="vendor" />
+	<h:outputScript name="sb-admin.js" library="js" />
+</h:body>
+</html>
