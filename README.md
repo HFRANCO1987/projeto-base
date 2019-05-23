@@ -1,3 +1,11 @@
-# Projeto Base - 3º Período - Linguagem de Programação para Internet
+# Projeto Base
 
-# Tema utilizado como base para desenvolvimento: https://startbootstrap.com/templates/sb-admin/
+# Tecnologias Utilizadas
+* JSF;
+* CDI;
+* JPA;
+* Mysql;
+* Spring Security;
+
+# Tema utilizado como base para desenvolvimento
+* https://startbootstrap.com/templates/sb-admin/
