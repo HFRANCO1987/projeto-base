@@ -6,9 +6,17 @@
 	xmlns:p="http://primefaces.org/ui"
 	template="/WEB-INF/tema/template.xhtml">
 
-	<ui:define name="title">Dashboard</ui:define>
-
 	<ui:define name="head">
+
+		<!-- MEU ESTILO -->
+
+		<style>
+			tbody tr.ui-widget-content {
+				border: none !important;
+			}
+		</style>
+
+
 	</ui:define>
 
 	<ui:define name="content">
@@ -22,11 +30,18 @@
 				<li class="breadcrumb-item active"><a href="index.html">Novo</a></li>
 			</ol>
 			<h:form>
-			<util:cpanel titulo="Cadastro de Cliente" mb="#{clienteBean}">
-				<p:editor></p:editor>
-			</util:cpanel>
-			</h:form>
+				<p:panel header="Cadastro de Clientes">
+					<p:panelGrid columns="1">
+						<p:outputLabel value="Nome" />
+						<p:inputText></p:inputText>
+					</p:panelGrid>
 
+					<f:facet name="footer">
+						<p:commandButton value="Cancelar" />
+						<p:commandButton value="Gravar" />
+					</f:facet>
+				</p:panel>
+			</h:form>
 		</div>
 
 	</ui:define>
